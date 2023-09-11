@@ -116,3 +116,20 @@ section:last-child {
 .custom-link:hover{
 transform: scale(1.05);
 }
+#timestamp{
+  display: block;margin-top: 1em;color: green;font-weight: bolder;
+}
+
+.date-time{
+  display: block;
+  margin-top: 2em;
+
+
+}
+
+.date-time span{
+  display: block;
+  margin-bottom: 3em;
+  font-weight: bold;
+  color: green;
+}

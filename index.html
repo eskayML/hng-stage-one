@@ -24,35 +24,22 @@
     <main>
       <section class="info">
         <h1 data-testid="slackUserName" class="user-name">Samuel Kalu</h1>
-        <div class="track" data-testid="myTrack">Frontend</div>
         <div class="date-time">
+          <p>Day Of the Week</p>
           <span data-testid="currentDayOfTheWeek" id="day-of-week"></span>
-          <span data-testid="currentUTCTime" id="time"></span>
+          <p>UTC Time</p>
+          <span data-testid="currentUTCTime" id="timestamp"></span>
         </div>
       </section>
 
-      <section>
-        <h2>Current UTC Time</h2>
-        <p class="elements">
-          <span id="utc-time" data-testid="currentUTCTime">Loading...</span>
-          <span id="timestamp" style="display: block;margin-top: 1em;color: green;font-weight: bolder;">
-
-          </span>
-        </p> 
-
-      </section>
+ 
       <div>
         <h2 class="move-right">TRACK</h2>
-        <p class="move-right1"><span data-setid="myTrack"></span>Frontend</p>
+        <p class="move-right1"><span data-testid="myTrack"></span>Frontend</p>
       </div>
 
-      <div class="center-container">
-        <button id="refresh-btn" data-testid="refresh-button">
-          Refresh Data
-        </button>
-      </div>
 
-      <a href="https://github.com/eskayML/hng-stage-one" target="_blank">
+      <a href="https://github.com/eskayML/hng-stage-one" target="_blank" data-testid="githubURL">
         <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 496 512" class = 'custom-link'>
           <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
           <style>

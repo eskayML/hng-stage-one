@@ -1,6 +1,6 @@
 function updateUTCTime() {
-  const utcTimeElement = document.getElementById('utc-time');
-  const timstamp = document.getElementById('timestamp')
+  const utcTimeElement = document.getElementById('day-of-week');
+  const timestamp = document.getElementById('timestamp')
 
   function updateTime() {
     const currentTimeMillis = new Date().getTime() / 1000; // Convert to seconds
@@ -13,10 +13,8 @@ function updateUTCTime() {
   }
 
   updateTime();
-
   setInterval(updateTime, 1000);
 }
 
 updateUTCTime();
-
 document.getElementById('refresh-btn').addEventListener('click', updateUTCTime);
